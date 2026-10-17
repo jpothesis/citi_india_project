@@ -34,7 +34,7 @@ const mockOpportunities = [
     status: "sample",
     verified: false,
     eligibility: "Open to students interested in community improvement.",
-  },
+  }
 ];
 
 const mockCommunityProjects = [
@@ -64,11 +64,9 @@ const mockCommunityProjects = [
 
 const importData = async () => {
   try {
-    // Clear out existing data to prevent duplicates
     await Opportunity.deleteMany();
     await CommunityProject.deleteMany();
 
-    // Insert the mock data arrays
     await Opportunity.insertMany(mockOpportunities);
     await CommunityProject.insertMany(mockCommunityProjects);
 
