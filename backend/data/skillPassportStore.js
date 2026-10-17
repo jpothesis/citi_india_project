@@ -1,0 +1,1 @@
+export const skillPassports = new Map();

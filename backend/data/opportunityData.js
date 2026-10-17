@@ -1,0 +1,32 @@
+export const opportunities = [
+  {
+    id: "1",
+    title: "Community Teaching Assistant",
+    category: "Education",
+    description: "Help younger students practice foundational skills.",
+    type: "community-project",
+    status: "sample",
+    verified: false,
+    eligibility: "Suitable for students interested in teaching.",
+  },
+  {
+    id: "2",
+    title: "Digital Skills Learner",
+    category: "Technology",
+    description: "Build basic digital skills through guided practice.",
+    type: "learning",
+    status: "sample",
+    verified: false,
+    eligibility: "Beginner-friendly; basic digital access recommended.",
+  },
+  {
+    id: "3",
+    title: "Local Problem-Solving Project",
+    category: "Community",
+    description: "Develop a project addressing a local community need.",
+    type: "community-project",
+    status: "sample",
+    verified: false,
+    eligibility: "Open to students interested in community improvement.",
+  },
+];
