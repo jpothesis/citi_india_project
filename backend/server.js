@@ -1,6 +1,8 @@
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
+import connectDB from "./config/db.js"; // Imported the database connection
+
 import studentRoutes from "./routes/studentRoutes.js";
 import opportunityRoutes from "./routes/opportunityRoutes.js";
 import pathwayRoutes from "./routes/pathwayRoutes.js";
@@ -9,6 +11,9 @@ import communityProjectRoutes from "./routes/communityProjectRoutes.js";
 import teacherDashboardRoutes from "./routes/teacherDashboardRoutes.js";
 
 dotenv.config();
+
+// Initialize MongoDB connection
+connectDB();
 
 const app = express();
 const PORT = process.env.PORT || 5000;
